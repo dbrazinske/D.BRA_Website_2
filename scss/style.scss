@@ -63,6 +63,7 @@ nav{
   }
   a:hover{
     color: #E27866;
+    cursor: url(../images/hand-pointer-solid-3.png), default;
   }
   .selected{
     color: #E27866;
@@ -128,7 +129,7 @@ nav{
   background-image: url(../images/photo-1480714378408-67cf0d13bc1b.png);
   background-position: center;
   min-height: 639px;
-  width: 1400px;
+  min-width: 1400px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
@@ -194,5 +195,50 @@ h1{
 .download:hover{
   background-color: #E27866;
   transform: scale(1.1);
+  cursor: url(../images/hand-pointer-solid-3.png), default;
 }
+}
+
+.section2{
+  display: flex;
+  flex-direction: row;
+  width: 1400px;
+  height: 105px;
+  box-shadow: 0px 1px 3px #00000061;
+
+.text{
+  display: flex;
+  flex-direction: column;
+  width: 394px;
+  margin-left: 152px;
+  justify-content: center;
+}
+h2{
+  color: #333333;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+  p{
+    width: 394px;
+    font-size: 14px;
+    text-align: left;
+    color: #86878B;
+  }
+ .socialMedia{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 854px;
+   margin-top: 38px;
+   margin-bottom: 37px;
+ }
+ a{
+  font-size: 30px;
+  color: #E27866;
+  cursor: url(../images/hand-pointer-solid-2.png), default;
+ }
+ a:hover{
+   transform: scale(1.2);
+ }
 }

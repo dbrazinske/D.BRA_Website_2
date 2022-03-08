@@ -268,18 +268,21 @@ h2{
     h2{
       color: #FFFFFF;
       font-size: 30px;
-      width: 314px;
+      width: 320px;
       margin-top: 90px;
     }
     .image2{
-      background-image: url(../images/divider_orange_u7\ copy\ 4@2x.png);
+      background-image: url("../images/divider_orange_u7\ copy\ 4@2x.png");
+      background-repeat: no-repeat;
       background-size: 200px, 2px;
-      min-width: 200px;
-      min-height: 2px;
+      width: 200px;
+      height: 2px;
+      margin: 27px 0px;
     }
     h3{
       color: #FFFFFF;
-      font-size: 14px;
+      font-size: 14px/20px;
+      margin-bottom: 5px;
     }
     p{
       color: #FFFFFF;
@@ -307,4 +310,81 @@ h2{
       margin-right: 20px;
     }
 
+}
+.section5{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1400px;
+  height: 592px;
+  box-shadow: 0px 1px 3px #00000061;
+
+  h2{
+    color: #212121;
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  .img-1{
+    background-image: url("../images/divider_orange_u7\ copy\ 4.png");
+    background-repeat: no-repeat;
+    align-items: center;
+    background-size: 64px, 2px;
+    height: 2px;
+    margin-top: 21px;
+    margin-bottom: 26px;
+  }
+  .top{
+    display: flex;
+    flex-direction: column;
+  }
+  .articleBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 962px;
+    text-align: center;
+    margin-top: 65.24px;
+  }
+  article{
+    margin-left: 97px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .article-1{
+    margin-left: 0px;
+    min-width: 286px;
+  }
+  .article-2{
+    min-width: 242px;
+  }
+  .article-3{
+    min-width: 238px;
+  }
+
+  i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 27px;
+    color: #E27866;
+    border: 2px solid #E27866;
+    border-radius: 100px;
+  }
+  h3{
+    font-size: 20px/24px;
+    color: #333333;
+    font-weight: normal;
+    margin: 27px 0px;
+  }
+  p{
+    color: #86878B;
+    font-size: 14px/20px;
+  }
 }

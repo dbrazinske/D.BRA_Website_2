@@ -11,21 +11,20 @@ main{
   align-items: center;
 }
 nav{
+  width: 100%;
   line-height: 72px;
-  max-width: 100%;
   background: #1C1C1C;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  position: sticky;
 
   .link {
   position: relative;
 }
   .links {
-  margin-right:  448px;
-  min-width: 531px;
+  padding-right: 20px;
+  width: 531px;
   display: flex;
   justify-content: space-between;
 }
@@ -85,14 +84,13 @@ nav{
 }
 
 .img-1{
-  background-image: url(../images/cheshire-county-hygiene-services.png);
-  justify-content: center;
-  align-items: center;
-  min-width: 119.37px;
+  background-image: url("../images/cheshire-county-hygiene-services@2x.png");
+  width: 119.37px;
   height: 52.06px;
-  padding-right: 10px;
   background-repeat: no-repeat;
-  margin-left: 348px;
+  background-size: contain;
+  background-position: center;
+  padding: 10px;
 }
 }
 @media (max-width: 768px) {
@@ -127,9 +125,9 @@ nav{
 .section1{
   position: relative;
   background-image: url(../images/photo-1480714378408-67cf0d13bc1b.png);
-  background-position: center;
-  min-height: 639px;
-  min-width: 1400px;
+  background-position: left-top;
+  background-size: cover;
+  min-width: 100%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
@@ -202,16 +200,17 @@ h1{
 .section2{
   display: flex;
   flex-direction: row;
-  width: 1400px;
+  justify-content: space-around;
+  width: 100%;
   height: 105px;
   box-shadow: 0px 1px 3px #00000061;
 
 .text{
   display: flex;
   flex-direction: column;
-  width: 394px;
-  margin-left: 152px;
+  max-width: 394px;
   justify-content: center;
+  padding-left: 20px;
 }
 h2{
   color: #333333;
@@ -224,14 +223,15 @@ h2{
     font-size: 14px;
     text-align: left;
     color: #86878B;
+    position: relative;
   }
  .socialMedia{
    display: flex;
    flex-direction: row;
    justify-content: space-around;
    width: 854px;
-   margin-top: 38px;
-   margin-bottom: 37px;
+   padding-top: 38px;
+   padding-bottom: 37px;
  }
  a{
   font-size: 30px;
@@ -247,29 +247,31 @@ h2{
   height: 595px;
 }
 .section4{
-  width: 1400px;
+  width: 100%;
   height: 595px;
   background-color: #1C1C1C;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 
   .image1{
     background-image: url(../images/cheshire-county-hygiene-services@2x.png);
     background-repeat: no-repeat;
-    background-size: 388.58px, 169.47px;
-    object-fit: cover;
+    background-size: cover;
     min-width: 388.58px;
     min-height: 169.47px;
-    margin: 213px 167.91px 213.53px 210.04px;
+    margin-left: 30px;
     }
     .text{
       width: 451px;
+      padding: 20px;
+
     }
     h2{
       color: #FFFFFF;
       font-size: 30px;
       width: 320px;
-      margin-top: 90px;
     }
     .image2{
       background-image: url("../images/divider_orange_u7\ copy\ 4@2x.png");
@@ -292,7 +294,6 @@ h2{
       display: flex;
       flex-direction: row;
       margin-top: 36px;
-
     }
     .title2{
       width: 394px;
@@ -316,7 +317,7 @@ h2{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1400px;
+  width: 100%;
   height: 592px;
   box-shadow: 0px 1px 3px #00000061;
 
@@ -330,7 +331,8 @@ h2{
     background-image: url("../images/divider_orange_u7\ copy\ 4.png");
     background-repeat: no-repeat;
     align-items: center;
-    background-size: 64px, 2px;
+    background-size: cover;
+    width: 64px;
     height: 2px;
     margin-top: 21px;
     margin-bottom: 26px;
@@ -342,14 +344,12 @@ h2{
   .articleBox{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 962px;
     text-align: center;
     margin-top: 65.24px;
+    min-width: 80%;
+    justify-content: space-around;  
   }
   article{
-    margin-left: 97px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -357,13 +357,17 @@ h2{
   }
   .article-1{
     margin-left: 0px;
-    min-width: 286px;
+    max-width: 286px;
+    padding-left: 30px;
   }
   .article-2{
-    min-width: 242px;
+    max-width: 242px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .article-3{
-    min-width: 238px;
+    max-width: 238px;
+    padding-right: 30px;
   }
 
   i{
@@ -386,5 +390,84 @@ h2{
   p{
     color: #86878B;
     font-size: 14px/20px;
+  }
+}
+.section6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 883px;
+  background-color: #6696E2;
+
+  .topText{
+    text-align: center;
+  }
+
+  .topText h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    padding: 21px 0;
+  }
+
+  .pricingOptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    align-items: center;
+    
+  }
+  article{
+    margin-top: 83px;
+    width: 343px;
+  }
+  .priceTop{
+    background-color: #333333;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+  }
+  .priceTop h2{
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 20px;
+    padding:  14px 0;
+  }
+   .payment{
+    color: #86878B;
+    font-weight: normal;
+    font-size: 18px;
+    padding:  19px 0;
+  }
+  .price {
+    font-size: 94px;
+    color: white;
+  }
+  span{
+    font-size: 40px;
+  }
+  .popular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    background-color: #41D395;
+    color: white;
+  }
+  ul{
+    background-color: white;
+    list-style: none;
+    text-align: center;
+    border-radius: 0px 0px 5px 5px;
+  } 
+  li{
+    font-size: 14px;
+    color: #86878B;
+    padding: 11px 0;
+  }
+  ul li:first-of-type{
+    border-top: 6px solid #41D395;
   }
 }

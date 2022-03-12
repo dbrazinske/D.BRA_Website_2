@@ -5,26 +5,21 @@
   text-decoration: none;
   font-family: montserrat;
 }
-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 nav{
-  width: 100%;
   line-height: 72px;
+  min-height: 72px;
   background: #1C1C1C;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
+}
   .link {
   position: relative;
 }
   .links {
   padding-right: 20px;
-  width: 531px;
+  min-width: 531px;
   display: flex;
   justify-content: space-between;
 }
@@ -92,35 +87,7 @@ nav{
   background-position: center;
   padding: 10px;
 }
-}
-@media (max-width: 768px) {
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .link{
-    width: 100px;
-    text-align: center;
 
-  }
-  .links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-  a {
-    display: none;
-  }
-
-  #burger {
-    display: block;
-    position: absolute;
-    top: -10px;
-    right: 15px;
-  }
-}
 
 .section1{
   position: relative;
@@ -258,13 +225,14 @@ h2{
   .image1{
     background-image: url(../images/cheshire-county-hygiene-services@2x.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    min-width: 388.58px;
-    min-height: 169.47px;
+    background-position: center;
+    background-size: contain;
+    min-width: 390px;
+    min-height: 180px;
     margin-left: 30px;
     }
     .text{
-      width: 451px;
+      max-width: 451px;
       padding: 20px;
 
     }
@@ -296,13 +264,13 @@ h2{
       margin-top: 36px;
     }
     .title2{
-      width: 394px;
+      max-width: 394px;
     }
     i{
       color: white;
       background-color: #E27866;
-      height: 50px;
-      width: 50px;
+      max-height: 50px;
+      min-width: 50px;
       font-size: 27px;
       display: flex;
       align-items: center;
@@ -327,11 +295,8 @@ h2{
     font-weight: 600;
   }
 
-  .img-1{
-    background-image: url("../images/divider_orange_u7\ copy\ 4.png");
-    background-repeat: no-repeat;
-    align-items: center;
-    background-size: cover;
+  .line{
+    border-bottom: 2px solid #E27866;
     width: 64px;
     height: 2px;
     margin-top: 21px;
@@ -340,6 +305,7 @@ h2{
   .top{
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .articleBox{
     display: flex;
@@ -606,7 +572,9 @@ article {
   .swiper-button-next {
     display: none;
   }
+  
 }
+
 }
 .section8{
   display: flex;
@@ -755,4 +723,131 @@ footer{
    font-size: 18px;
    color: #86878B;
  }
+}
+@media (max-width: 1000px){
+  
+ .headerLine h2{
+  width: 40%;
+  text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  nav .img-1{
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .link{
+    width: 100px;
+    text-align: center;
+
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+   nav a {
+    display: none;
+  }
+   nav i {
+    font-size: 1.5em;
+  }
+
+  #burger {
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 15px;
+  }
+  .section4{
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .section4 h2{
+    max-width: 100%;
+    text-align: center;
+  }
+  .virsus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section4 .text{
+    margin-left: 15px;
+  }
+ .section4 .image1{
+   margin-top:30px;
+    background-size: 100%;
+    margin: 0;
+  }
+ .section4 .image2{
+   margin-left: 5px;
+  }
+  .section4 .title1{
+    width: 100%;
+  }
+  .section5{
+    height: auto;
+  }
+ 
+  .section5 h2{
+    padding-top: 30px;
+    text-align: center;
+  }
+  .section5 p{
+    text-align: center;
+  }
+  .section5 .articleBox{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section5 .article-1{
+    padding: 0;
+  }
+  .section5 .article-2{
+    padding: 0;
+    padding-top: 30px;
+  }
+  .section5 .article-3{
+    padding: 0;
+    padding: 30px 0;
+  }
+
+  .section6{
+    height: auto;
+  }
+  .section6 .pricingOptions {
+    flex-direction: column;
+  }
+  .pricingOptions article:nth-last-of-type(1){
+    margin-bottom: 30px;
+  }
+  footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  footer .socialMedia{
+    width: 100%;
+  }
+  footer a{
+    font-size: 100%;
+
+  }
+  footer p{
+    font-size: 100%;
+    padding-bottom: 20px;
+  }
 }

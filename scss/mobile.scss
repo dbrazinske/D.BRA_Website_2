@@ -1,0 +1,136 @@
+@media (max-width: 1000px){
+  
+ .headerLine h2{
+  width: 40%;
+  text-align: center;
+  }
+}
+@media (max-width: 900px) {
+  nav .img-1{
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .link{
+    width: 100px;
+    text-align: center;
+
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+   nav a {
+    display: none;
+  }
+   nav i {
+    font-size: 1.5em;
+  }
+
+  #burger {
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 15px;
+  }
+  .section2{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  .section2 .text{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .section2 .socialMedia{
+    width: 100%;
+  }
+  .section4{
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .section4 h2{
+    max-width: 100%;
+    text-align: center;
+  }
+  .virsus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section4 .text{
+    margin-left: 15px;
+  }
+ .section4 .image1{
+   margin-top:30px;
+    background-size: 100%;
+    margin: 0;
+  }
+ .section4 .image2{
+   margin-left: 5px;
+  }
+  .section4 .title1{
+    width: 100%;
+  }
+  .section5{
+    height: auto;
+  }
+ 
+  .section5 h2{
+    padding-top: 30px;
+    text-align: center;
+  }
+  .section5 p{
+    text-align: center;
+  }
+  .section5 .articleBox{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section5 .article-1{
+    padding: 0;
+  }
+  .section5 .article-2{
+    padding: 0;
+    padding-top: 30px;
+  }
+  .section5 .article-3{
+    padding: 0;
+    padding: 30px 0;
+  }
+
+  .section6{
+    height: auto;
+  }
+  .section6 .pricingOptions {
+    flex-direction: column;
+  }
+  .pricingOptions article:nth-last-of-type(1){
+    margin-bottom: 30px;
+  }
+  footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  footer .socialMedia{
+    width: 100%;
+  }
+  footer p{
+    font-size: 100%;
+    padding-bottom: 20px;
+  }
+}

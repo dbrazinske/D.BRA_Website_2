@@ -1,0 +1,127 @@
+.section7{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 591px;
+  
+  .headerLine{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h2{
+    color: #1C1C1C;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .line{
+    height: 2px;
+    width: 64px;
+    border-bottom:2px solid #6696E2;
+    margin: 31px 0;
+  }
+  .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+  }
+  .avatar{
+    background: url(https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80);
+    background-repeat: no-repeat;
+    background-size: 70px, 70px;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  p{
+    max-width: 273px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #6696E2;
+    color: white;
+  }
+  .atsileipimas p:before {
+    position: absolute;
+    content: "";
+    top: 41%;
+    left: 364px;
+    border: 15px solid transparent;
+    border-top-color: #6696E2;
+}
+  .atsileipimas2 p:before {
+    position: absolute;
+    content: "";
+    top: 33%;
+    left: 365px;
+    border: 15px solid transparent;
+    border-top-color: #6696E2;
+}
+.autorius{
+  width: 273px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 19px;
+}
+h3{
+  color: #333333;
+  font-size: 20px;
+  font-weight: 300;
+}
+.specialybe{
+  background: none;
+  color: #86878B;
+  padding: 0;
+  font-size: 14px; 
+}
+ .swiper {
+  max-width: 1000px;
+  user-select: none;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items:flex-end
+}
+
+article {
+  margin-bottom: 100px;
+}
+
+.swiper-pagination-bullet {
+  border: 1px solid #E27866;
+  background-color: white;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: #E27866;
+}
+.swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+@media (min-width: 1000px) {
+  .swiper {
+    max-width: 1400px;
+  }
+
+  .atsileipimas p:before {
+    top: 40%;
+    left: 562px;
+}
+  .atsileipimas2 p:before {
+    top: 33%;
+    left: 562px;
+}
+
+  
+  
+}
+
+}

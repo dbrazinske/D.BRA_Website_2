@@ -1,0 +1,121 @@
+.section8{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 573px;
+  background-color: #E27866;
+  h2{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 50px 0;
+  }
+  p{
+    color: #FFFFFF;
+    font-size: 14px;
+    padding-bottom: 27px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    height: 314px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 5px 6px #00000029;
+  }
+  ::placeholder{
+    padding-left: 7.5px;
+  }
+  #fname{
+    width: 260px;
+    border: none;
+    font-size: 12px;
+    border-bottom: 2px solid #acacac;
+    padding-top: 33px;
+  }
+  #lname{
+    width: 260px;
+    border: none;
+    font-size: 12px;
+    border-bottom: 2px solid #acacac;
+    padding-top: 33px;
+  }
+  #phoneNumber{
+    width: 260px;
+    border: none;
+    font-size: 12px;
+    border-bottom: 2px solid #acacac;
+    padding-top: 33px;
+  }
+  #send{
+    width: 158.12px;
+    height: 48px;
+    font-size: 15px;
+    color: white;
+    background-color: #41D395;
+    border-radius: 5px;
+    border:none;
+    cursor: url(../images/hand-pointer-solid-2.png), default;
+  }
+
+  .radio-inputs {
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+.radio-input {
+  display: flex;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  width: 16px;
+  height: 16px;
+  border: 2px solid #41D395;
+
+  position: relative;
+  top: 10px;
+  margin: 5px;
+  left: 5px;
+  border-radius: 50%;
+}
+
+input[type="radio"],
+input[type="radio"] + label {
+cursor: url(../images/hand-pointer-solid-2.png), default;
+}
+
+input[type="radio"]::before {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  content: "";
+  width: 50%;
+  height: 50%;
+  background: #41D395;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+label{
+  color: #86878B;
+  font-size: 9px;
+}
+.radioBtn{
+  width: 260px;
+  text-align: left;
+}
+}

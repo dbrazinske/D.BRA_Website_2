@@ -36,21 +36,24 @@
     border: none;
     font-size: 12px;
     border-bottom: 2px solid #acacac;
-    padding-top: 33px;
+    margin-top: 23px;
+    padding: 4px 0;
   }
   #lname{
     width: 260px;
     border: none;
     font-size: 12px;
     border-bottom: 2px solid #acacac;
-    padding-top: 33px;
+    margin-top: 23px;
+    padding: 4px 0;
   }
   #phoneNumber{
     width: 260px;
     border: none;
     font-size: 12px;
     border-bottom: 2px solid #acacac;
-    padding-top: 33px;
+    margin-top: 23px;
+    padding: 4px 0;
   }
   #send{
     width: 158.12px;
@@ -61,6 +64,10 @@
     border-radius: 5px;
     border:none;
     cursor: url(../images/hand-pointer-solid-2.png), default;
+  }
+  #send:hover{
+  background-color: #32b67f;
+   font-size: 1.2em;
   }
 
   .radio-inputs {

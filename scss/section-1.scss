@@ -22,7 +22,7 @@
   .img-2{
     background-image: url(../images/cheshire-county-hygiene-services@2x.png);
     background-repeat: no-repeat;
-    width: 246.74px;
+    max-width: 246.74px;
     height: 107.61px;
     margin-top: 65.76px;
     }
@@ -31,12 +31,14 @@
     flex-direction: column;
     max-width: 651px;
     z-index: 1;
+    padding-left: 50px;
+   padding-right: 50px;
   }
 h1{
     color: white;
     font-size: 36px;
     text-align: left;
-    width: 426px;
+    max-width: 426px;
     margin-top: 20px;
   }
   .img-3{
@@ -50,6 +52,7 @@ h1{
   p{
     color: white;
     font-size: 16px;
+    max-width: 651px;
   }
 
 .download{
@@ -72,9 +75,136 @@ h1{
    height: 425px;
    display: flex;
    flex-direction: column;
-   align-items: center;
-   justify-content: center;
    z-index: 1;
    background-color: white;
+   border-radius: 5px;
+   margin-right: 50px;
+   position: relative;
+   margin-right: 20px;
+   margin-left: 20px;
+ }
+ h2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   font-weight: 600;
+   width: 100%;
+   min-height: 57px;
+   background-color: #F5F5F5;
+   border-radius:  5px 5px 0 0;
+ }
+ .details, .subscription{
+   width: 280px;
+   font-size: 16px;
+   font-weight: 600;
+   text-align: left;
+   margin-top: 20px;
+ }
+ span{
+   color: #E27866;
+   margin: 0 4px;
+ }
+ form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ ::placeholder{
+   color: #D8D8D8;
+    padding-left: 7.5px;
+  }
+  #fname{
+    width: 260px;
+    border: none;
+    font-size: 12px;
+    border-bottom: 1px solid #D8D8D8;
+    margin-top: 13px;
+    padding: 10px;
+  }
+  #lname{
+    width: 260px;
+    border: none;
+    font-size: 12px;
+    border-bottom: 1px solid #D8D8D8;
+    margin-top: 13px;
+    padding: 10px;
+  }
+  #phoneNumber{
+    width: 260px;
+    border: none;
+    font-size: 12px;
+    border-bottom: 1px solid #D8D8D8;
+    margin-top: 13px;
+    padding: 10px;
+  }
+ .radio-inputs {
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+ .radio-input {
+  display: flex;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  width: 16px;
+  height: 16px;
+  border: 2px solid #41D395;
+
+  position: relative;
+  top: 10px;
+  margin: 5px;
+  left: 5px;
+  border-radius: 50%;
+}
+
+input[type="radio"],
+input[type="radio"] + label {
+cursor: url(../images/hand-pointer-solid-2.png), default;
+}
+
+input[type="radio"]::before {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  content: "";
+  width: 50%;
+  height: 50%;
+  background: #41D395;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+label{
+  color: black;
+  font-size: 9px;
+  font-weight: 600;
+}
+.radioBtn{
+  width: 290px;
+}
+ #send{
+   border: none;
+   font-size: 18px;
+   font-weight: 600;
+   color: white;
+   background-color: #41D395;
+   width: 360px;
+   height: 57px;
+   border-radius: 0 0 5px 5px;
+   cursor: url(../images/hand-pointer-solid-2.png), default;
+ }
+ #send:hover{
+   background-color: #32b67f;
+   font-size: 1.2em;
  }
 }

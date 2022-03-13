@@ -6,7 +6,13 @@
   height: 595px;
   max-width: 100%;
   
-
+.blueLayer1{
+  width: 100%;
+  height: 595px;
+  background: transparent linear-gradient(270deg, #6696E2 0%, #E27866 100%) 0% 0% no-repeat padding-box;
+  opacity:0.4;
+  position: absolute;
+}
   .blueLayer{
   max-width:100%;
   height:595px;
@@ -14,14 +20,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  // background: transparent linear-gradient(270deg, #6696E2 0%, #E27866 100%) 0% 0% no-repeat padding-box;
-  // opacity:0.4;
-  // z-index: 0;
+  
 }
 .buttons{
   display: flex;
   flex-direction: column; 
   padding: 0 50px;
+  position: relative;
 }
 button {
   border: none;
@@ -35,6 +40,7 @@ button {
   color: white;
   transition: 0.3s;
   opacity: 0.6;
+  position: relative;
 }
 
 button:hover {

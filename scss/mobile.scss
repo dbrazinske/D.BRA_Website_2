@@ -107,16 +107,9 @@
     justify-content: center;
     align-items: center;
   }
-  .section4 .text{
-    margin-left: 15px;
-  }
  .section4 .image1{
-   margin-top:30px;
-    background-size: 100%;
+    background-size: 90%;
     margin: 0;
-  }
- .section4 .image2{
-   margin-left: 5px;
   }
   .section4 .title1{
     width: 100%;
@@ -159,6 +152,13 @@
   .pricingOptions article:nth-last-of-type(1){
     margin-bottom: 30px;
   }
+
+  .section7 h2{
+    width: 100%;
+  }
+  .section7 .line{
+    margin: 20px 0;
+  }
   footer{
     flex-direction: column;
     justify-content: center;
@@ -177,7 +177,7 @@
 //Swiper
 @media (min-width: 1000px) {
   .swiper {
-    max-width: 1400px;
+    min-width: 1400px;
   }
 
   .atsileipimas p:before {

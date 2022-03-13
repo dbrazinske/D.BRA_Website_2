@@ -142,3 +142,18 @@
     padding-bottom: 20px;
   }
 }
+//Swiper
+@media (min-width: 1000px) {
+  .swiper {
+    max-width: 1400px;
+  }
+
+  .atsileipimas p:before {
+    top: 40%;
+    left: 562px;
+}
+  .atsileipimas2 p:before {
+    top: 33%;
+    left: 562px;
+} 
+}

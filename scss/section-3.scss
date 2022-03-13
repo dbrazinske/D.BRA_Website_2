@@ -8,7 +8,7 @@
   
 
   .blueLayer{
-  width:100%;
+  max-width:100%;
   height:595px;
   display: flex;
   flex-direction: row;
@@ -22,7 +22,6 @@
   display: flex;
   flex-direction: column; 
   padding: 0 50px;
-  width: 100px;
 }
 button {
   border: none;
@@ -53,29 +52,33 @@ button span{
   color: white;
   opacity: 1;
 }
-
-.tab {
+.changes{
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  padding: 15px 30px;
-  justify-content: center;
-  padding-top: 0;
-  margin: 15px;
-  border-top: none;
-  opacity: 0;
-  max-width: 1400px;
-  transition: 1s;
+  max-width: 1200px;
+  padding: 20px;
 }
 
-.textInfo h2{
+.tab {
+  opacity: 0;
+  transition: 1s;
+}
+.textInfo{
   max-width: 509px;
+  padding: 20px;
+}
+.textInfo h2{
   font-size: 36px;
   font-weight: 600;
   color: white;
+  padding: 15px;
 }
 .textInfo p{
   max-width: 517px;
   color: white;
+  padding: 15px;
 }
 
 .tabAnimation {
@@ -91,15 +94,16 @@ button span{
 .paveiksliukai{
   display: flex;
   flex-direction: column;
-  width: 362px;
+  max-width: 362px;
   height: 370px;
   justify-content: space-between;
+  margin: 20px;
 }
 .salota{
   background-image: url(../images/salota.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 168px;
+  min-width: 168px;
   height: 168px;
   position: relative;
   
@@ -110,7 +114,7 @@ button span{
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   opacity: 0;
   transition: .5s ease;

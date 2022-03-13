@@ -5,6 +5,32 @@
   text-align: center;
   }
 }
+@media (max-width: 1230px){
+  .section3{
+    position: relative;
+    min-height: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+   }
+  .section3 .buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .section3 .blueLayer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1100px;
+  }
+  .section3 .changes{
+    flex-direction: column;
+    position: static;
+  }
+}
 @media (max-width: 900px) {
   nav .img-1{
     display: none;
@@ -58,6 +84,12 @@
   }
   .section2 .socialMedia{
     width: 100%;
+  }
+  .section3 .buttons{
+    margin-top: 10px;
+  }
+  .section3 .textInfo h2{
+    text-align: center;
   }
   .section4{
     flex-direction: column;

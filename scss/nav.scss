@@ -6,16 +6,18 @@ nav{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  position: sticky;
 }
-// .navContainer{
-//   display: flex;
-//   justify-content:space-around;
-//   max-width: 100%;
-//   background-color: #1C1C1C;
-//   position: fixed;
-//   z-index: 2;
-// }
+.navContainer{
+  display: flex;
+  justify-content:space-around;
+  max-width: 100%;
+  background-color: #1C1C1C;
+  position: fixed;
+  z-index: 2;
+}
+ul{
+  list-style: none;
+}
   .link {
   position: relative;
 }
@@ -24,7 +26,6 @@ nav{
   min-width: 531px;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .link:before {
@@ -53,7 +54,7 @@ nav{
   background: #E27866;
 }
 
-  a, i{
+  a{
     color: #FFFFFF;
     font-size: 14px;
     font-weight: normal;
@@ -62,25 +63,9 @@ nav{
     color: #E27866;
     cursor: url(../images/hand-pointer-solid-3.png), default;
   }
-  .selected{
-    color: #E27866;
+  nav .navContainer ul li.active {
+    background-color: #e2786665;
   }
-
-  #burger {
-  cursor: pointer;
-  display: none;
-  font-size: 1.5em;
-  transition: transform 0.3s;
-  padding: 0 30px;
-}
-
-.rotate {
-  transform: rotate(-90deg);
-}
-.block {
-  display: block;
-}
-
 .img-1{
   background-image: url("../images/cheshire-county-hygiene-services.png");
   width: 119.37px;

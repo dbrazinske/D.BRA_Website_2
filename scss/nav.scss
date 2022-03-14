@@ -9,8 +9,7 @@ nav{
 }
 .navContainer{
   display: flex;
-  justify-content:space-around;
-  max-width: 100%;
+  flex-direction: row;
   background-color: #1C1C1C;
   position: fixed;
   z-index: 2;
@@ -65,6 +64,7 @@ ul{
   }
   nav .navContainer ul li.active {
     background-color: #e2786665;
+    transition: 0.3 ease background-color;
   }
 .img-1{
   background-image: url("../images/cheshire-county-hygiene-services.png");

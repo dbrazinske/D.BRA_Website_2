@@ -1,6 +1,6 @@
-// "use strict";
+"use strict";
 var sections = document.querySelectorAll(`section`);
-var navLi = document.querySelector(`nav .navContainer ul li`);
+var navLi = document.querySelectorAll(`nav .navContainer ul li`);
 
 window.addEventListener(`scroll`, ()=> {
     let current = ``;

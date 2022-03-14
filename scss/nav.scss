@@ -1,6 +1,6 @@
 nav{
   line-height: 72px;
-  min-height: 72px;
+  height: 72px;
   background: #1C1C1C;
   display: flex;
   flex-direction: row;
@@ -8,8 +8,11 @@ nav{
   align-items: center;
 }
 .navContainer{
+  height: 72px;
+  min-width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   background-color: #1C1C1C;
   position: fixed;
   z-index: 2;
@@ -19,24 +22,14 @@ ul{
 }
   .link {
   position: relative;
+  margin-left: 20px ;
+  margin-right: 20px ;
 }
-  .links {
-  padding-right: 20px;
-  min-width: 531px;
+ .links {
+  max-width: 531px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
 }
-
-.link:before {
-  position: absolute;
-  content: "";
-  top: 0;
-  width: 100%;
-  height: 3px;
-  background: #1C1C1C;
-  transition: 0.3s;
-}
-
 .link:after {
   position: absolute;
   content: "";
@@ -53,18 +46,20 @@ ul{
   background: #E27866;
 }
 
-  a{
+a{
     color: #FFFFFF;
     font-size: 14px;
     font-weight: normal;
   }
-  a:hover{
+a:hover{
     color: #E27866;
     cursor: url(../images/hand-pointer-solid-3.png), default;
   }
-  nav .navContainer ul li.active {
-    background-color: #e2786665;
-    transition: 0.3 ease background-color;
+nav .navContainer ul li.active {
+    a{
+      color: #E27866;
+      font-size: 1.2em;
+    }
   }
 .img-1{
   background-image: url("../images/cheshire-county-hygiene-services.png");

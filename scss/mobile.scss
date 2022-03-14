@@ -35,38 +35,20 @@
 }
 
 @media (max-width: 900px) {
+  //navigation menu
   nav .img-1{
     display: none;
   }
-
-//   nav {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-//   .link{
-//     width: 100px;
-//     text-align: center;
-//   }
-//   .links {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-// }
-//    nav a {
-//     display: none;
-//   }
-//    nav i {
-//     font-size: 1.5em;
-//   }
-
-//   #burger {
-//     display: block;
-//     position: absolute;
-//     top: 5px;
-//     right: 15px;
-//   }
+  nav .navContainer{
+    max-width: 300px;
+  }
+  nav .link{
+   margin: 0;
+  }
+  nav a{
+   font-size: smaller;
+   padding-left: 7px;
+  }
 
   //Sections
   .section1{
@@ -92,6 +74,7 @@
   }
   .section3 .buttons{
     margin-top: 10px;
+    padding: 0;
   }
   .section3 .textInfo h2{
     text-align: center;

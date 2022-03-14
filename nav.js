@@ -11,7 +11,6 @@ window.addEventListener(`scroll`, ()=> {
             current = section.getAttribute( `id`);
         } 
     })
-    console.log(current);
     navLi.forEach( li => {
         li.classList.remove(`active`);
         if(li.classList.contains(current)){
